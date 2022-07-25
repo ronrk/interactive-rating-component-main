@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Overpass', sans-serif;
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding: 3rem 4rem;
+  background-image: linear-gradient(hsl(213, 19%, 18%), hsl(216, 12%, 8%));
+  min-height: 50rem;
+  max-width: 45rem;
+  height: 50rem;
+  width: 45rem;
+  border-radius: 1.5rem;
+  border: 0.1px solid;
+  border-color: hsl(216, 12%, 54%);
+}
+
+.star-icon-container {
+  /* position: relative; */
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(149, 158, 172, 0.4);
+  border-radius: 50%;
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+.icon-star {
+  height: 2.2rem;
+  width: 2.2rem;
+  /* position: absolute; */
+  top: 0.6rem;
+  left: 0.75rem;
+}
+
+.before-rat {
+  max-width: 100%;
+  height: 100%;
+}
+.after-rat {
+  max-width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 4rem;
+}
+
+.after__heading {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: hsl(25, 97%, 53%);
+  background-color: hsla(217, 12%, 63%, 0.4);
+  padding: 1rem 2rem;
+  border-radius: 100px;
+  text-align: center;
+}
+.after__heading span {
+  font-size: inherit;
+}
+
+h2 {
+  /* margin: 6rem 2rem; */
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 2.9rem;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+p {
+  color: hsl(217, 12%, 63%);
+  font-size: 1.4rem;
+  opacity: 0.6;
+  /* padding: 0 2rem; */
+
+  margin-bottom: 2rem;
+}
+.text-center {
+  text-align: center;
+}
+
+.numbers {
+  margin: 4rem 0 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.numbers span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: rgba(149, 158, 172, 0.7);
+  border: 0.5px solid rgba(149, 158, 172, 0.25);
+  background-color: rgba(149, 158, 172, 0.25);
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+.numbers span.active {
+  background-color: hsl(216, 12%, 54%);
+  color: hsl(0, 0%, 100%);
+}
+.numbers span:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+button {
+  text-align: center;
+  display: block;
+  padding: 1.5rem 4rem;
+  border-radius: 30rem;
+  color: hsl(0, 0%, 100%);
+  font-size: 1.8rem;
+  letter-spacing: 0.4rem;
+  font-family: inherit;
+  border: none;
+  background-color: hsl(25, 97%, 53%);
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: 0.3s ease-in-out;
+  width: 70%;
+  margin-top: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+button:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+.hide {
+  display: none;
+}
